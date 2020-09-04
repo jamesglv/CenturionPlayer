@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centurion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="titleContain">
+            <h3 class="centurion">The Centurion</h3>
+            <h3 class="enjoy">Enjoy Responsibly.</h3>
+    </div>
+    <div class="restartContain">
+        <button class="restartBtn">Start Again</button>
+    </div>
+    
+    <div class="box">
+        
+        <div id="trackInfo">
+            <p id="begins">Begins in</p>
+            <p id="timeInt"></p>
+            <p id="trackName"></p>
+            <p id="artist"></p>
+        </div>
+        
+        <audio id="myAudio" controls>
+            <source src="https://dl.dropbox.com/s/wb1s7fds3fgoz2x/Centurion2.mp3?dl=0" type="audio/mpeg" preload="auto">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="playbtn">
+            <button id="btn">
+                <i class="fas fa-play"></i>
+            </button>
+        </div>
+        
+        <button id="back">
+            <i class="fas fa-angle-double-left"></i>
+        </button>
+        <input type="number" id="inputNum">
+            <button id="selectTrack">
+                <i class="fas fa-rocket"></i>
+            </button>
+        <button id="fwd">
+            <i class="fas fa-angle-double-right"></i>
+        </button>
+        <p id="timeStamp"></p>
+
+        <div></div>
+        <button class="dlBtn">DOWNLOAD</button>
+         
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

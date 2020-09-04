@@ -1,0 +1,157 @@
+body{
+    background-image: url("warne.jpg");
+    background-position: top;
+    background-size: cover;
+    background-color: white;
+    width: auto;
+    text-align: center;
+    font-family: "Bebas Neue";
+    
+}
+
+.box{
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    justify-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.box h3{
+    margin: 0;
+}
+
+.restartContain{
+    width: 100%;
+    display: flex;
+}
+
+.enjoy{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.restartBtn{
+    left: 50%;
+    display: none;
+    opacity:0;
+}
+#begins{
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.titleContain{
+    
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0px 0px 0px;
+    color: white;
+}
+
+.titleContain h3{
+    margin: auto;
+}
+
+#trackInfo{
+    padding: 0px;
+}
+
+#timeInt{
+    font-size: 120px;
+    margin: 0;
+}
+
+#trackName, #artist{
+    font-size: 30px;
+    margin: 0;
+}
+
+#btn{
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    font-size: 1.6em;
+}
+
+#btn:hover{
+    background-color: rgb(0, 75, 6);
+    color: white;
+    cursor: pointer;
+}
+
+.skipContain{
+    margin: 20px;
+}
+
+#inputNum{
+    padding: 10px;
+    width: 50px;
+    font-size: 1.6em;
+    margin-right: -3px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#back, #fwd{
+    padding: 10px;
+    font-size: 1.6em;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#back:hover, #fwd:hover, #selectTrack:hover, .dlBtn:hover{
+    background-color: rgb(0, 75, 6);
+    color: white;
+    cursor: pointer;
+}
+
+#selectTrack{
+    padding: 10px;
+    font-size: 1.6em;
+    margin-left: -2px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+}
+
+
+.dlBtn{
+    font-family: "Bebas Neue";
+    padding: 10px;
+    font-size: 1.6em;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.dlBtn.fall{
+    animation-name: fall;
+    animation-duration: 4s;
+}
+
+.restartBtn.showBtn{
+    align-content: center;
+    display: block;
+    animation-name: showBtn;
+    animation-duration: 4s;
+}
+
+@keyframes fall{
+    to {margin: 100px;opacity: 0};
+    
+}
+
+@keyframes showBtn{
+    to {opacity: 1;}
+}
